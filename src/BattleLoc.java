@@ -1,13 +1,13 @@
 
 import java.util.Random;
 
-public abstract class BattelLoc extends Location{
+public abstract class BattleLoc extends Location{
     private Obstacle obstacle;
     private String award;
     private int maxObstacle;
 
 
-    public BattelLoc(String name, Player player,Obstacle obstacle,String award, int maxObstacle) {
+    public BattleLoc(String name, Player player,Obstacle obstacle,String award, int maxObstacle) {
         super(player, name);
         this.obstacle = obstacle;
         this.award = award;

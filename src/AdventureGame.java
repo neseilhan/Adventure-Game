@@ -10,7 +10,7 @@ public class AdventureGame {
         player.selectChar();
         Location location = null;
         while (true) {
-//            player.printInfo();
+            player.printInfo();
             System.out.println();
             System.out.println("----- Bölgeler -----");
             System.out.println();
@@ -19,7 +19,7 @@ public class AdventureGame {
             System.out.println("3- Mağara => Mağaraya git, dikkatli ol 'zombi' çıkabilir ! / Ödül <Yemek>");
             System.out.println("4- Orman => Ormana git, dikkatli ol 'vampir' çıkabilir ! / Ödül <Odun>");
             System.out.println("5- Nehir => Nehire git, dikkatli ol 'ayı' çıkabilir ! / Ödül <Su>");
-            System.out.println("6- Maden => Madene git, dikkatli ol 'yılan' çıkabilir ! / Ödül <Para, Silah veya Zırh>");
+            System.out.println("6- Maden => Madene git, dikkatli ol 'yılan' çıkabilir ! / Ödül <Para , Silah veya Zırh>");
 
             System.out.println("0 - Çıkış Yap --> Oyunu sonlandır");
             System.out.println();
@@ -36,19 +36,17 @@ public class AdventureGame {
                 case 2:
                     location = new ToolStore(player);
                     break;
-//                case 3:
-//                    location = new Cave(player);
-//                    break;
-//                case 4:
-//                    location = new Forest(player);
-//                    break;
-//                case 5:
-//                    location = new River(player);
-//                    break;
-//                case 6:
-//                    location = new Mine(player);
-//                    break;
-
+                case 3:
+                    location = new Cave(player);
+                    break;
+                case 4:
+                    location = new Forest(player);
+                    break;
+                case 5:
+                    location = new River(player);
+                    break;
+                case 6 :
+                    location = new Mine(player);
                 default:
                     System.out.println("Lütfen geçerli bir bölge giriniz !");
             }

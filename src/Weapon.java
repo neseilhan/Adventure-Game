@@ -14,8 +14,8 @@
         public static Weapon[] weapons() {
             Weapon[] weaponList =new Weapon[3];
             weaponList[0] = new Weapon("Tabanca " ,1,2,15);
-            weaponList[1] = new Weapon("Kılıç\t" , 2,3,35);
-            weaponList[2] = new Weapon("Tüfek\t" ,3,7,45);
+            weaponList[1] = new Weapon("Kılıc\t" , 2,3,35);
+            weaponList[2] = new Weapon("Tufek\t" ,3,7,45);
             return weaponList;
         }
 
